@@ -88,6 +88,10 @@ nav {
   border: 1px solid #03989e;
 }
 
+.button-adotar:hover{
+  background-color: white;
+}
+
 .header-description {
   margin-top: 100px;
   padding-left: 100px;

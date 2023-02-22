@@ -86,7 +86,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 30px;
+  padding: 0px 50px;
   background-image: url("../img/img-oqueFazemos.png");
   background-size: cover;
 }
@@ -103,7 +103,7 @@
   width: 300px;
   height: 450px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: #ff3d81;
   padding: 30px;
@@ -162,7 +162,6 @@
 
 .desc-oque-fazemos {
   width: 50%;
-  height: 100%;
   border-bottom: 1px solid #ff3d81;
 }
 
@@ -184,7 +183,7 @@
 /* quero-doar */
 
 .quero-doar {
-  padding: 50px 30px;
+  padding: 50px;
   background-color: #ff3d81;
 }
 
@@ -196,7 +195,7 @@
 
 .container-doar {
   margin: auto;
-  width: 90%;
+  width: 100%;
   height: 80%;
   display: flex;
 
@@ -295,4 +294,191 @@
 .receptor i {
   font-size: 18pt;
   letter-spacing: 5px;
+}
+
+/*fundadora*/
+
+.fundadora {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  height: 80vh;
+  background-image: url("../img/fundo-fundadora.png");
+}
+
+.carrossel-fundadora {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrossel-fundadora button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  background-color: #ff3d81b7;
+  font-size: 16pt;
+}
+
+.btn-esquerda {
+  transform: translateX(30.2px);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.btn-direita {
+  transform: translateX(-30.2px);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.container-carrossel {
+  display: flex;
+  width: 350px;
+  height: 450px;
+  align-items: center;
+
+  overflow: hidden;
+  border: 5px solid #ff3d81;
+  box-shadow: 0px 2px 3px black;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.container-carrossel img {
+  width: 100%;
+  height: 100%;
+  flex: none;
+  background-size: cover;
+  scroll-snap-align: start;
+}
+
+.desc-fundadora {
+  width: 100%;
+  line-height: 20px;
+  border-bottom: 1px solid #ff3d81;
+}
+
+.desc-fundadora h2 {
+  width: 200px;
+  border-bottom: 1px solid #ff3d81;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.desc-fundadora p {
+  margin: 20px 0px;
+}
+
+/*adotar-animal*/
+
+.adotar-animal {
+  padding: 20px 50px;
+  background-color: #d9e5e6;
+}
+
+.titulo-adotar-animal {
+  margin: auto;
+  background-image: url("../img/img-titulos/titulo-adotar.png");
+}
+
+.title-desc-adotar {
+  font-family: "Anton";
+  text-align: left;
+  font-size: 23pt;
+  letter-spacing: 2px;
+}
+
+.title-desc-adotar span {
+  font-family: "Anton";
+  color: #03989e;
+}
+
+.container-adotar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 10px;
+  background-color: #d9e5e6;
+}
+
+.card-adotar {
+  text-align: center;
+  width: 350px;
+  height: 550px;
+  background-color: #03989e;
+  background-image: url("../img/animais-adotar/card-principal-animal.png");
+  background-size: cover;
+}
+
+.card-adotar p {
+  padding: 10px;
+  font-size: 18pt;
+}
+
+.seta-adotar {
+  display: inline-block;
+  font-size: 30pt;
+  animation: animarSeta linear infinite 2s;
+}
+
+.links-adotar {
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #03989e;
+  width: 80%;
+  padding: 7px;
+  border-radius: 20px;
+  color: black;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.623);
+}
+
+.cards-animais {
+  text-align: left;
+  width: 60%;
+  height: 550px;
+  overflow: hidden;
+}
+
+.cards-animais img {
+  margin-bottom: 6px;
+  margin-left: 10px;
+  width: 160px;
+  height: 270px;
+  background-color: #03989e;
+  background-size: cover;
+}
+
+.link-ver-animais {
+  text-align: right;
+  display: inline-block;
+  width: 90%;
+  margin-bottom: 5px;
+  text-decoration: underline;
+  color: #03989e;
+}
+
+.link-ver-animais i {
+  display: inline-block;
+  font-size: 18pt;
+  animation: animarSeta linear infinite 2s;
+  transform: translateY(3px);
+}
+
+@keyframes animarSeta {
+  0% {
+    transform: translateY(10px);
+  }
 }

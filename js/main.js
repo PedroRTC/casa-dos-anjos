@@ -1,8 +1,15 @@
 let sobreNos = document.querySelector(".container-sobre-nos");
+let assuntos = [];
+
 let buttonCopy = document.querySelector(".button-copy");
 let inputPix = document.querySelector(".input-pix");
 let confirmCopy = document.querySelector(".confirm-copy");
-let assuntos = [];
+
+let containerCarrossel=document.querySelector(".container-carrossel")
+let btnDireita=document.querySelector(".btn-direita")
+let btnEsquerda=document.querySelector(".btn-esquerda")
+
+
 
 async function iniciarResposta() {
   assuntos = await respSobre();
@@ -62,14 +69,35 @@ function removeAssunto(sectionAssunto, expandir, sectionTitulo) {
   );
 }
 
-buttonCopy.addEventListener("click", function (e) {
-  inputPix.select();
-  document.execCommand("copy");
-  confirmCopy.innerHTML = `<i class="bi bi-check-circle-fill"></i> Pix copiado`;
-  confirmCopy.style.background = "#a9dbd0";
 
-  setTimeout(() => {
-    confirmCopy.innerHTML = "Pix de doação";
-    confirmCopy.style.background = "white";
-  }, 3000);
-});
+
+function copiarPix(){
+
+  buttonCopy.addEventListener("click", function (e) {
+    inputPix.select();
+    document.execCommand("copy");
+    confirmCopy.innerHTML = `<i class="bi bi-check-circle-fill"></i> Pix copiado`;
+    confirmCopy.style.background = "#a9dbd0";
+  
+    setTimeout(() => {
+      confirmCopy.innerHTML = "Pix de doação";
+      confirmCopy.style.background = "white";
+    }, 3000);
+  });
+  
+}
+
+copiarPix()
+
+function carrosselFundadora(){
+
+  btnDireita.addEventListener("click",()=>{
+      containerCarrossel.scrollBy(300,0)
+  })
+
+  btnEsquerda.addEventListener("click",()=>{
+    containerCarrossel.scrollBy(-300,0)
+})
+}
+
+carrosselFundadora()

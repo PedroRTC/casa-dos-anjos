@@ -27,9 +27,9 @@
   </head>
   <body>
     <!-------------Conteúdo-Header---------------->
+
     <a id="INICIO"></a>
     <header>
-
       <section class="container-menu">
         <img src="img/logopng.png" class="logo-menu" />
 
@@ -52,8 +52,10 @@
             AJUDE NOSSO ABRIGO
           </h1>
           <section class="section-buttons-header">
-            <a class="button-doar" id="buttons-header" href="#DOAR">QUERO DOAR</a>
-            <a href="" id="buttons-header" class="button-adotar"
+            <a class="button-doar" id="buttons-header" href="#DOAR"
+              >QUERO DOAR</a
+            >
+            <a href="#ADOTAR" id="buttons-header" class="button-adotar"
               >ADOTAR ANIMAL</a
             >
           </section>
@@ -68,9 +70,9 @@
     </header>
 
     <!-------------Conteúdo-Sobre-Nós------------->
+
     <a id="SOBRE-NOS"></a>
     <section class="sobre-nos">
-     
       <div class="titulo-sobre-nos titulo-secao">
         <h2>Sobre Nós</h2>
       </div>
@@ -83,9 +85,9 @@
     </section>
 
     <!-------------Conteúdo-Oque-fazemos---------->
+
     <a id="OQUE-FAZEMOS"></a>
     <section class="oque-fazemos">
-      
       <div class="container-oque-fazemos">
         <div class="img-oque-fazemos">
           <div class="card-oque-fazemos">
@@ -129,45 +131,128 @@
       </div>
     </section>
     <!-------------Conteúdo-Quero-doar------------>
+
     <a id="DOAR"></a>
     <section class="quero-doar">
       <div class="titulo-quero-doar titulo-secao">
         <h2>Quero Doar</h2>
       </div>
       <div class="container-doar">
+        <div class="desc-doar sections-doar">
+          <h3 class="title-desc-doar">
+            <span>Ajude-os</span>, qualquer valor será bem vindo para essas
+            fofuras
+          </h3>
+          <img class="qrcode" src="img/qrcode.png" alt="" />
+          <p>se preferir, leia o QR Code® Pix com seu app de pagamentos</p>
+          <section class="pix-doar">
+            <span class="confirm-copy">Pix de doação</span>
+            <input
+              type="text"
+              name=""
+              class="input-pix"
+              readonly
+              value="casadosanjosmacae@gmail.com"
+            />
+            <i class="bi bi-file-earmark-arrow-down button-copy"></i>
+          </section>
 
-         <div class="desc-doar sections-doar ">
-           <h3 class="title-desc-doar"><span>Ajude-os</span>, qualquer valor será bem vindo para essas fofuras</h3>
-            <img class="qrcode" src="img/qrcode.png" alt="">
-            <p>se preferir, leia o QR Code® Pix com seu app de pagamentos</p>
-            <section class="pix-doar">
-              <span class="confirm-copy">Pix de doação</span>
-              <input type="text" name="" class="input-pix" readonly value="casadosanjosmacae@gmail.com" >
-              <i class="bi bi-file-earmark-arrow-down button-copy"></i>
-             
-            </section>
+          <p>
+            Ou você pode doar direto do nosso link de doação<br /><a href=""
+              >https://iti.itau/receber-pix/casadosanjos</a
+            >
+          </p>
+        </div>
 
-            <p>Ou você pode doar direto do nosso link de doação<br><a href="">https://iti.itau/receber-pix/casadosanjos</a></p>
-         </div>
-
-         <div class="quem-vai-receber sections-doar">
-      
-           <div class="receptor">
-          
-              <p>quem vai receber</p>
-              <h3> <i class="bi bi-person-circle"></i>Thais Da Matta Fagundes Lima</h3>
-              <p>Descrição</p>
-              <h3>Gratidão - Casa dos Anjos</h3>
-           </div>
-           <img  class=" img-doar" src="img/img-doacao.png" alt="">
-         </div>
-         
+        <div class="quem-vai-receber sections-doar">
+          <div class="receptor">
+            <p>quem vai receber</p>
+            <h3>
+              <i class="bi bi-person-circle"></i>Thais Da Matta Fagundes Lima
+            </h3>
+            <p>Descrição</p>
+            <h3>Gratidão - Casa dos Anjos</h3>
+          </div>
+          <img class="img-doar" src="img/img-doacao.png" alt="" />
+        </div>
       </div>
     </section>
 
     <!-------------Conteúdo-Fundadora------------->
 
+    <section class="fundadora">
+      <div class="desc-fundadora">
+        <h2>Fundadora</h2>
+        <h4>Thaís Fagundes</h4>
+        <p>
+          Thaís Fagundes , esposa, mãe de 3 filhos, dedica sua vida aos animais,
+          nunca se arrependeu nem temeu as consequências de assumir os riscos
+          que ter um abrigo trouxe.
+        </p>
+        <p>
+          Sempre usou seu próprio nome em todos os registros das
+          responsabilidades do abrigo: contratos de aluguel, parcerias com
+          clínicas veterinárias e casas de ração (onde as contas são feitas na
+          “pendura” com pagamento à medida que conseguimos doações).
+        </p>
+        <p>
+          Por sorte e pela transparência do seu trabalho, consegue manter essas
+          parcerias com pagamentos facilitados –mesmo com dívidas astronômicas
+          todos os meses – por conta da sua transparência e honestidade com os
+          envolvidos.
+        </p>
+      </div>
+
+      <div class="carrossel-fundadora">
+        <button class="btn-esquerda"><i class="bi bi-chevron-left"></i></button>
+        <div class="container-carrossel">
+          <img src="img/img-fundadora/1.png" alt="" />
+          <img src="img/img-fundadora/2.png" alt="" />
+          <img src="img/img-fundadora/3.png" alt="" />
+          <img src="img/img-fundadora/4.png" alt="" />
+        </div>
+        <button class="btn-direita"><i class="bi bi-chevron-right"></i></button>
+      </div>
+    </section>
     <!-------------Conteúdo-Adotar-Animal--------->
+    <a id="ADOTAR"></a>
+    <section class="adotar-animal">
+      <div class="titulo-adotar-animal titulo-secao">
+        <h2>Adotar</h2>
+      </div>
+
+      <h3 class="title-desc-adotar">
+        Para não ficar sozinho <span>adote</span><br />
+        um amiguinho
+      </h3>
+      <a href="" class="link-ver-animais"
+        >Ver mais animais<i class="bi bi-arrow-down-short"></i
+      ></a>
+
+      <div class="container-adotar">
+        <div class="card-adotar">
+          <p>Contatos para adoção</p>
+          <i class="bi bi-arrow-down-short seta-adotar"></i>
+          <a class="links-adotar" href=""
+            ><i class="bi bi-instagram"></i>@casadosanjos</a
+          >
+          <a class="links-adotar" href=""
+            ><i class="bi bi-whatsapp"></i>55 (22) 99246-9860</a
+          >
+        </div>
+
+        <div class="cards-animais">
+          <img src="img/animais-adotar/card-animal01.png" alt="" />
+          <img src="img/animais-adotar/card-animal02.png" alt="" />
+          <img src="img/animais-adotar/card-animal03.png" alt="" />
+          <img src="img/animais-adotar/card-animal04.png" alt="" />
+          <img src="img/animais-adotar/card-animal05.png" alt="" />
+          <img src="img/animais-adotar/card-animal06.png" alt="" />
+          <img src="img/animais-adotar/card-animal07.png" alt="" />
+          <img src="img/animais-adotar/card-animal08.png" alt="" />
+        </div>
+      </div>
+    </section>
 
     <!-------------Conteúdo-Nossos-Animais-------->
 
