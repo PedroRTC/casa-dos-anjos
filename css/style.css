@@ -72,15 +72,13 @@ nav {
   transition: all 0.3s;
 }
 
-
-
 .button-doar {
   background-color: #ff3d81;
   border: 1px solid #ff3d81;
 }
 
-.button-doar:hover{
-  background-color:#FF71A3;
+.button-doar:hover {
+  background-color: #ff71a3;
 }
 
 .button-adotar {
@@ -88,7 +86,7 @@ nav {
   border: 1px solid #03989e;
 }
 
-.button-adotar:hover{
+.button-adotar:hover {
   background-color: white;
 }
 
@@ -138,4 +136,86 @@ nav {
   height: 50px;
   color: #333;
   font-size: 18pt;
+}
+
+/*footer*/
+
+footer {
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  background-color: #ff3d81;
+}
+
+.container-pix-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.container-pix-footer p {
+  font-size: 14pt;
+}
+
+.pix-footer {
+  display: flex;
+  padding: 13px;
+  border: 1px solid #ff71a3;
+  border-radius: 15px;
+}
+
+.pix-footer p {
+  background-color: #ff71a3;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 12pt;
+}
+
+.pix-footer i {
+  font-size: 14pt;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
+.redes-footer {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  border-bottom: 1px solid #fc93b8;
+}
+
+.redes-footer a {
+  display: inline-block;
+  color: black;
+  margin: 10px;
+  padding: 7px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.457);
+  border-radius: 20px;
+}
+
+.redes-footer i {
+  padding: 0px 5px;
+}
+
+.link01-footer {
+  background-color: #de004e;
+}
+
+.link02-footer {
+  background-color: #ff1b6b;
+}
+
+.link03-footer {
+  background-color: #ff5e96;
+}
+
+.link04-footer {
+  background-color: #fc93b8;
+}
+
+.copyhigh {
+  margin-top: 20px;
+  color: #fc93b8;
 }

@@ -265,7 +265,7 @@
   background-color: transparent;
 }
 
-.button-copy {
+.copy-doar {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -305,6 +305,7 @@
   padding: 50px;
   height: 80vh;
   background-image: url("../img/fundo-fundadora.png");
+  background-size: cover;
 }
 
 .carrossel-fundadora {
@@ -380,7 +381,8 @@
 /*adotar-animal*/
 
 .adotar-animal {
-  padding: 20px 50px;
+  margin: auto;
+  padding: 30px 50px;
   background-color: #d9e5e6;
 }
 
@@ -394,6 +396,7 @@
   text-align: left;
   font-size: 23pt;
   letter-spacing: 2px;
+  margin-bottom: 30px;
 }
 
 .title-desc-adotar span {
@@ -461,24 +464,63 @@
   background-size: cover;
 }
 
-.link-ver-animais {
-  text-align: right;
-  display: inline-block;
-  width: 90%;
-  margin-bottom: 5px;
-  text-decoration: underline;
+.desc-final-adotar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  font-size: 18pt;
   color: #03989e;
 }
 
-.link-ver-animais i {
+.bi-arrow-90deg-up {
   display: inline-block;
-  font-size: 18pt;
   animation: animarSeta linear infinite 2s;
-  transform: translateY(3px);
 }
 
 @keyframes animarSeta {
   0% {
     transform: translateY(10px);
   }
+}
+
+/*animais*/
+
+.animais {
+  margin: auto;
+  text-align: center;
+  padding: 0px 50px;
+}
+
+.titulo-animais {
+  background-image: url("../img/img-titulos/titulo-animais.png");
+  margin-bottom: 40px;
+}
+
+.container-animais {
+  column-count: 6;
+  column-gap: 10px;
+}
+
+.imgAnimal {
+  width: 100%;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.triangulo-animais {
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  background-image: url("../img/triangulo-animais.png");
+  background-size: cover;
+}
+
+.animais p {
+  color: #03989e;
+  font-size: 10pt;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #03989e;
+  text-align: right;
 }
