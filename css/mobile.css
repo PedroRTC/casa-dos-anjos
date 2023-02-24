@@ -48,10 +48,7 @@
 
 @media screen and (max-width: 1000px) {
   /**************************container-menu*********************************/
-  .container-menu {
-    
-    
-  }
+ 
   nav {
     display: none;
   }
@@ -189,20 +186,16 @@
 
   .container-desc-header {
     gap: 5px;
-    margin-bottom:0px;
+    margin-bottom: 0px;
   }
 
-  .title-main{
+  .title-main {
     font-size: 14pt;
-    
   }
 
-  .section-buttons-header{
+  .section-buttons-header {
     gap: 20px;
-       
   }
-
- 
 
   /**********************fundadora******************/
   .container-carrossel {
