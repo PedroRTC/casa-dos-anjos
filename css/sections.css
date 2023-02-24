@@ -9,7 +9,6 @@
   background-position: 50% 50%;
 }
 /*section sobre nós*/
-
 .sobre-nos {
   margin: auto;
   text-align: center;
@@ -70,7 +69,6 @@
 }
 
 /* section oque fazemos*/
-
 .oque-fazemos {
   display: flex;
   justify-content: center;
@@ -84,11 +82,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 80%;
+  height: 100%;
   width: 100%;
 }
 
 .img-oque-fazemos {
+  margin: auto;
   width: 300px;
   height: 450px;
   display: flex;
@@ -150,6 +149,7 @@
 }
 
 .desc-oque-fazemos {
+  margin: auto;
   width: 50%;
   border-bottom: 1px solid #ff3d81;
 }
@@ -170,7 +170,6 @@
 }
 
 /* quero-doar */
-
 .quero-doar {
   border-bottom: 3px dashed #65669b;
   padding: 50px;
@@ -238,10 +237,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   background-color: #ff3d81;
   height: 100%;
-  padding: 0px 5px;
+  padding: 0px 3px;
   transition: all 0.5s;
 }
 
@@ -278,14 +277,32 @@
 }
 
 /*fundadora*/
-
 .fundadora {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 80px  50px;
+  padding: 80px 50px;
   background-image: url("../img/fundo-fundadora.png");
   background-size: cover;
+}
+
+.desc-fundadora {
+  margin: auto;
+  width: 100%;
+  line-height: 20px;
+  border-bottom: 1px solid #ff3d81;
+ 
+}
+
+.desc-fundadora h2 {
+  width: 200px;
+  border-bottom: 1px solid #ff3d81;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.desc-fundadora p {
+  margin: 20px 0px;
 }
 
 .carrossel-fundadora {
@@ -294,6 +311,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .carrossel-fundadora button {
@@ -341,27 +359,10 @@
   scroll-snap-align: start;
 }
 
-.desc-fundadora {
-  width: 100%;
-  line-height: 20px;
-  border-bottom: 1px solid #ff3d81;
-}
-
-.desc-fundadora h2 {
-  width: 200px;
-  border-bottom: 1px solid #ff3d81;
-  padding: 5px;
-  margin-bottom: 20px;
-}
-
-.desc-fundadora p {
-  margin: 20px 0px;
-}
-
 /*adotar-animal*/
-
 .adotar-animal {
   margin: auto;
+  text-align: center;
   padding: 30px 50px;
   background-color: #d2d3f4;
 }
@@ -373,7 +374,7 @@
 
 .title-desc-adotar {
   font-family: "Anton";
-  text-align: left;
+  text-align: center;
   font-size: 23pt;
   letter-spacing: 2px;
   margin-bottom: 30px;
@@ -406,7 +407,7 @@
   margin-top: 40px;
   padding: 10px;
   font-size: 18pt;
-  color: white;
+  color: black;
 }
 
 .seta-adotar {
@@ -439,7 +440,7 @@
 
 .cards-animais img {
   margin-bottom: 6px;
-  margin-left: 10px;
+  margin-left: 20px;
   width: 160px;
   height: 270px;
   background-color: #03989e;
@@ -453,7 +454,6 @@
   gap: 20px;
   padding: 10px;
   font-size: 18pt;
-  
 }
 
 .bi-arrow-90deg-up {
@@ -468,7 +468,6 @@
 }
 
 /*animais*/
-
 .animais {
   margin: auto;
   text-align: center;
@@ -506,3 +505,15 @@
   border-bottom: 1px solid #65669b;
   text-align: right;
 }
+
+
+
+
+
+
+
+  
+
+
+
+

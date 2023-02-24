@@ -1,0 +1,229 @@
+/*****************************mobile style.css***********************************/
+@media screen and (max-width: 1100px) {
+  /***********************oque fazemos*********************************/
+  .container-oque-fazemos {
+    margin: auto;
+    display: inline-block;
+  }
+
+  .desc-oque-fazemos {
+    width: 100%;
+  }
+
+  /**********************quero doar**********************************/
+
+  .container-doar {
+    display: inline-block;
+  }
+
+  .title-desc-doar {
+    width: 100%;
+  }
+  /***********************fundadora****************************/
+  .fundadora {
+    display: inline-block;
+  }
+  .desc-fundadora {
+    margin-bottom: 20px;
+  }
+
+  .carrossel-fundadora {
+    margin: auto;
+  }
+
+  /****************adotar animal*******************************/
+
+  .card-adotar {
+    margin: 0;
+  }
+
+  .cards-animais {
+    width: 70%;
+  }
+
+  .container-animais {
+    column-count: 4;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /**************************container-menu*********************************/
+  .container-menu {
+    
+    
+  }
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /****************************header*******************/
+
+  .header-description {
+    margin: auto;
+    padding-left: 0px;
+    padding: 0px 20px;
+  }
+
+  .container-desc-header {
+    margin: auto;
+    width: 100%;
+  }
+
+  .title-main {
+    font-size: 22pt;
+  }
+
+  .section-buttons-header {
+    width: 100%;
+  }
+
+  .section-redes-header {
+    width: 100%;
+  }
+
+  /**********************sobre nos************************************/
+  .sobre-nos {
+    padding: 20px;
+  }
+
+  /***********************oque fazemos*********************************/
+  .oque-fazemos {
+    padding: 20px;
+  }
+
+  .img-oque-fazemos {
+    width: 280px;
+    padding: 20px;
+    margin: auto;
+  }
+
+  /**********************quero doar**********************************/
+  .quero-doar {
+    padding: 20px;
+  }
+
+  .pix-doar {
+    width: 325px;
+  }
+
+  .confirm-copy {
+    font-size: 9pt;
+    padding: 3px;
+  }
+
+  /***********************fundadora****************************/
+  .fundadora {
+    padding: 20px;
+  }
+
+  .desc-fundadora {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  /****************adotar animal*******************************/
+  .adotar-animal {
+    padding: 20px;
+  }
+
+  .container-adotar {
+    margin: auto;
+    display: inline-block;
+  }
+
+  .title-desc-adotar {
+    text-align: center;
+  }
+
+  .card-adotar {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .cards-animais {
+    margin: auto;
+    text-align: center;
+
+    width: 100%;
+  }
+
+  .cards-animais img {
+    margin-left: 0;
+    margin: 10px;
+  }
+
+  /**************animais***********************/
+  .animais {
+    padding: 0px 20px;
+  }
+  .container-animais {
+    column-count: 3;
+  }
+
+  /**************************footer**************************/
+
+  .container-pix-footer {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .redes-footer {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    align-items: flex-end;
+    background-image: url("../img/img-header-mobile.png");
+  }
+
+  .header-description {
+    margin-bottom: 0px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .container-desc-header {
+    gap: 5px;
+    margin-bottom:0px;
+  }
+
+  .title-main{
+    font-size: 14pt;
+    
+  }
+
+  .section-buttons-header{
+    gap: 20px;
+       
+  }
+
+ 
+
+  /**********************fundadora******************/
+  .container-carrossel {
+    width: 100%;
+    height: 400px;
+  }
+
+  /****************adotar animal*******************************/
+
+  .card-adotar {
+    width: 320px;
+  }
+
+  .cards-animais img {
+    width: 150px;
+    margin: 3px;
+  }
+
+  /**************animais***********************/
+
+  .container-animais {
+    column-count: 2;
+  }
+}

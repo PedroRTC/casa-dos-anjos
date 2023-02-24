@@ -89,7 +89,7 @@ function copiarPix() {
   buttonCopy.addEventListener("click", function (e) {
     inputPix.select();
     document.execCommand("copy");
-    confirmCopy.innerHTML = `<i class="bi bi-check-circle-fill"></i> Pix copiado`;
+    confirmCopy.innerHTML = `<i class="bi bi-check-circle-fill"></i>Copiado`;
     confirmCopy.style.background = "#a9dbd0";
 
     setTimeout(() => {
