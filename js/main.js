@@ -94,7 +94,7 @@ function copiarPix() {
 
     setTimeout(() => {
       confirmCopy.innerHTML = "Pix de doação";
-      confirmCopy.style.background = "white";
+      confirmCopy.style.background = "";
     }, 3000);
   });
 }

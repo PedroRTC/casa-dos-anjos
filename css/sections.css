@@ -11,45 +11,34 @@
 /*section sobre nós*/
 
 .sobre-nos {
-  text-align: center;
-}
-
-.logo-sobre-nos {
-  width: 80px;
-  height: 80px;
-  padding: 5px;
   margin: auto;
-  background-color: #d9e5e6;
-  border-radius: 50%;
-  transform: translateY(38px);
-  box-shadow: 0px 3px 5px #33333380;
-}
-
-.logo-sobre-nos img {
-  width: 70px;
-  height: 70px;
+  text-align: center;
+  background-color: #d2d3f4;
+  padding: 50px;
+  border-bottom: 3px dashed #65669b;
 }
 
 .titulo-sobre-nos {
-  margin-left: 20px;
+  margin: auto;
+  text-align: center;
   background-image: url("../img/img-titulos/titulo-sobreNos.png");
   background-size: cover;
 }
 
 .container-sobre-nos {
-  background-color: #ff3d81;
-  padding: 40px;
+  padding: 30px 0px;
 }
 
 .sectionAssunto {
   text-align: left;
-  background-color: #ff71a3;
+  background-color: #d2d3f4;
   margin-top: 30px;
   padding: 0px 10px;
   height: 45px;
   overflow: hidden;
-  box-shadow: 0px 5px 10px #bf2d6065;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.205);
   transition: all 0.5s;
+  border-left: 5px solid #ff3d81;
 }
 
 .sectionTitulo {
@@ -72,6 +61,7 @@
   background-color: transparent;
   cursor: pointer;
   transition: all 0.3s;
+  color: #ff3d81;
 }
 
 .descricao {
@@ -82,11 +72,10 @@
 /* section oque fazemos*/
 
 .oque-fazemos {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 50px;
+  padding: 50px;
   background-image: url("../img/img-oqueFazemos.png");
   background-size: cover;
 }
@@ -183,8 +172,9 @@
 /* quero-doar */
 
 .quero-doar {
+  border-bottom: 3px dashed #65669b;
   padding: 50px;
-  background-color: #ff3d81;
+  background-color: #d2d3f4;
 }
 
 .titulo-quero-doar {
@@ -196,11 +186,10 @@
 .container-doar {
   margin: auto;
   width: 100%;
-  height: 80%;
+  height: 100%;
   display: flex;
-
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
 .sections-doar {
@@ -209,19 +198,26 @@
 }
 
 .desc-doar {
+  width: 100%;
+  height: 100%;
   line-height: 35px;
+  border-bottom: 1px solid #ff3d81;
 }
 
 .title-desc-doar {
-  font-size: 25pt;
+  width: 70%;
+  font-size: 22pt;
   font-family: "Anton", sans-serif;
   margin-bottom: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  color: #65669b;
+  border-bottom: 1px solid #ff3d81;
+  padding-bottom: 5px;
 }
 
 .title-desc-doar span {
   font-family: "Anton", sans-serif;
-  color: white;
+  color: black;
 }
 
 .qrcode {
@@ -230,7 +226,7 @@
 }
 
 .pix-doar {
-  background-color: #ff71a3;
+  background-color: white;
   width: 350px;
   display: flex;
   align-items: center;
@@ -243,7 +239,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: white;
+  background-color: #ff3d81;
   height: 100%;
   padding: 0px 5px;
   transition: all 0.5s;
@@ -273,27 +269,12 @@
   cursor: pointer;
 }
 
-.quem-vai-receber {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.receptor {
-  margin: auto;
-  text-align: left;
-  width: 60%;
-  background-color: #ff71a3;
-  line-height: 25px;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 25px;
-}
-
-.receptor i {
-  font-size: 18pt;
-  letter-spacing: 5px;
+.img-doar {
+  width: 100%;
+  height: 450px;
+  background-image: url("../img/img-doacao.png");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 /*fundadora*/
@@ -302,8 +283,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
-  height: 80vh;
+  padding: 80px  50px;
   background-image: url("../img/fundo-fundadora.png");
   background-size: cover;
 }
@@ -383,7 +363,7 @@
 .adotar-animal {
   margin: auto;
   padding: 30px 50px;
-  background-color: #d9e5e6;
+  background-color: #d2d3f4;
 }
 
 .titulo-adotar-animal {
@@ -397,11 +377,12 @@
   font-size: 23pt;
   letter-spacing: 2px;
   margin-bottom: 30px;
+  color: #65669b;
 }
 
 .title-desc-adotar span {
   font-family: "Anton";
-  color: #03989e;
+  color: black;
 }
 
 .container-adotar {
@@ -410,7 +391,6 @@
   align-items: flex-start;
   width: 100%;
   gap: 10px;
-  background-color: #d9e5e6;
 }
 
 .card-adotar {
@@ -423,8 +403,10 @@
 }
 
 .card-adotar p {
+  margin-top: 40px;
   padding: 10px;
   font-size: 18pt;
+  color: white;
 }
 
 .seta-adotar {
@@ -440,7 +422,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: #03989e;
+  background-color: #ff3d81;
   width: 80%;
   padding: 7px;
   border-radius: 20px;
@@ -466,12 +448,12 @@
 
 .desc-final-adotar {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   padding: 10px;
   font-size: 18pt;
-  color: #03989e;
+  
 }
 
 .bi-arrow-90deg-up {
@@ -518,9 +500,9 @@
 }
 
 .animais p {
-  color: #03989e;
+  color: #65669b;
   font-size: 10pt;
   margin-bottom: 20px;
-  border-bottom: 1px solid #03989e;
+  border-bottom: 1px solid #65669b;
   text-align: right;
 }

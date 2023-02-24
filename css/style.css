@@ -44,8 +44,9 @@ header {
   z-index: 1;
 }
 
-.container-menu a {
-  color: #333;
+nav a {
+  color: black;
+  font-weight: 500;
 }
 
 nav {
@@ -55,8 +56,13 @@ nav {
 }
 
 .logo-menu {
-  width: 50px;
-  height: 56px;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #buttons-header {
@@ -82,8 +88,8 @@ nav {
 }
 
 .button-adotar {
-  background-color: #d9e5e6;
-  border: 1px solid #03989e;
+  background-color: #d2d3f4;
+  border: 1px solid #65669B;
 }
 
 .button-adotar:hover {
@@ -91,7 +97,6 @@ nav {
 }
 
 .header-description {
-  margin-top: 100px;
   padding-left: 100px;
 }
 
@@ -144,7 +149,8 @@ footer {
   padding: 20px;
   margin: auto;
   text-align: center;
-  background-color: #ff3d81;
+  background-color: #65669b;
+  color: #d2d3f4;
 }
 
 .container-pix-footer {
@@ -157,17 +163,20 @@ footer {
 
 .container-pix-footer p {
   font-size: 14pt;
+  border-left: 3px solid #d2d3f4;
+  padding: 0px 5px;
 }
 
 .pix-footer {
   display: flex;
   padding: 13px;
-  border: 1px solid #ff71a3;
+  border: 1px solid #d2d3f4;
   border-radius: 15px;
+  color: black;
 }
 
 .pix-footer p {
-  background-color: #ff71a3;
+  background-color: #d2d3f4;
   padding: 10px;
   border-radius: 7px;
   font-size: 12pt;
@@ -183,7 +192,15 @@ footer {
   margin: auto;
   width: 80%;
   padding: 10px;
-  border-bottom: 1px solid #fc93b8;
+  border-bottom: 1px dashed #d2d3f4;
+  margin-top: 20px;
+}
+
+.redes-footer p {
+  text-align: left;
+  font-size: 14pt;
+  padding: 0px 5px;
+  border-left: 3px solid #d2d3f4;
 }
 
 .redes-footer a {
@@ -193,6 +210,7 @@ footer {
   padding: 7px;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.457);
   border-radius: 20px;
+  border-left: 5px solid #ff3d81;
 }
 
 .redes-footer i {
@@ -200,22 +218,22 @@ footer {
 }
 
 .link01-footer {
-  background-color: #de004e;
+  background-color: #484ac6;
 }
 
 .link02-footer {
-  background-color: #ff1b6b;
+  background-color: #6466cd;
 }
 
 .link03-footer {
-  background-color: #ff5e96;
+  background-color: #8284d6;
 }
 
 .link04-footer {
-  background-color: #fc93b8;
+  background-color: #a0a1d0;
 }
 
 .copyhigh {
   margin-top: 20px;
-  color: #fc93b8;
+  color: #d2d3f4;
 }
