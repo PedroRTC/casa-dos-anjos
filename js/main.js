@@ -9,7 +9,9 @@ let confirmCopy = document.querySelector(".confirm-copy");
 
 let containerCarrossel = document.querySelector(".container-carrossel");
 let btnDireita = document.querySelector(".btn-direita");
-let btnEsquerda = document.querySelector(".btn-esquerda");
+let btnEsquerda = document.querySelector(".btn-esquerda")
+
+
 
 async function iniciarResposta() {
   assuntos = await respSobre();
@@ -112,3 +114,6 @@ function carrosselFundadora() {
 }
 
 carrosselFundadora();
+
+
+

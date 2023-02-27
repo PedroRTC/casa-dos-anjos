@@ -9,7 +9,7 @@ function fetchJson(url){
   
 }
 
-/*passando a dados*/
+/*passando os dados*/
 
 function respSobre(){
    return fetchJson("http://127.0.0.1:5500/json/sobre.json")

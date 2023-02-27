@@ -47,16 +47,36 @@
 }
 
 @media screen and (max-width: 1000px) {
-  /**************************container-menu*********************************/
- 
   nav {
+    position: fixed;
+    top: 75px;
+    left: 100%;
     display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.807);
+    text-align: center;
+    padding-top: 50px;
+    z-index: 1;
+    transition: all 1s;
+  }
+
+  nav a {
+    font-size: 16pt;
+    color: white;
+    padding: 10px 0px;
+  }
+
+  .btn-menu-mobile {
+    display: flex;
   }
 }
 
 @media screen and (max-width: 800px) {
   /****************************header*******************/
-
   .header-description {
     margin: auto;
     padding-left: 0px;
@@ -65,18 +85,6 @@
 
   .container-desc-header {
     margin: auto;
-    width: 100%;
-  }
-
-  .title-main {
-    font-size: 22pt;
-  }
-
-  .section-buttons-header {
-    width: 100%;
-  }
-
-  .section-redes-header {
     width: 100%;
   }
 
@@ -171,10 +179,19 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
+  /****************************header*******************/
   header {
     align-items: flex-end;
     background-image: url("../img/img-header-mobile.png");
+  }
+
+  #buttons-header {
+    width: 130px;
+  }
+
+  .button-adotar {
+    background-color: white;
   }
 
   .header-description {
@@ -190,11 +207,17 @@
   }
 
   .title-main {
-    font-size: 14pt;
+    letter-spacing: 1px;
+    font-size: 15pt;
   }
 
   .section-buttons-header {
     gap: 20px;
+    width: 100%;
+  }
+
+  .section-redes-header {
+    width: 100%;
   }
 
   /**********************fundadora******************/
