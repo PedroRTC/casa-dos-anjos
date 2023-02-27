@@ -1,22 +1,17 @@
-
 /*tratando a resposta do json*/
 
-function fetchJson(url){
-  return fetch(url).then((resp)=>{
-    return resp.json()
-   
-  })
-  
+function fetchJson(url) {
+  return fetch(url).then((resp) => {
+    return resp.json();
+  });
 }
 
 /*passando os dados*/
 
-function respSobre(){
-   return fetchJson("http://127.0.0.1:5500/json/sobre.json")
+function respSobre() {
+  return fetchJson("json/sobre.json");
 }
 
-
-function respAnimais(){
-  
-  return fetchJson("http://127.0.0.1:5500/json/animais.json")
+function respAnimais() {
+  return fetchJson("json/animais.json");
 }

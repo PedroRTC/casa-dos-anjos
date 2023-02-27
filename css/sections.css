@@ -229,7 +229,6 @@
   width: 350px;
   display: flex;
   align-items: center;
-  gap: 5px;
   margin-bottom: 10px;
 }
 
@@ -274,6 +273,28 @@
   background-image: url("../img/img-doacao.png");
   background-size: cover;
   background-position: 50% 50%;
+}
+
+.confirmPix {
+  top: 90px;
+  left: -100%;
+  margin: 30px;
+  width: 150px;
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  border: 1px solid green;
+  background-color: rgb(232, 254, 232);
+  gap: 10px;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+
+.descConfirm {
+  color: green;
+  font-size: 14pt;
 }
 
 /*fundadora*/
@@ -397,7 +418,7 @@
   text-align: center;
   width: 350px;
   height: 550px;
-  background-color: #03989e;
+  background-color: #65669b;
   background-image: url("../img/animais-adotar/card-principal-animal.png");
   background-size: cover;
 }
@@ -428,6 +449,12 @@
   border-radius: 20px;
   color: black;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.623);
+  transition: all 0.5s;
+  border: 1px solid #ff3d81;
+}
+
+.links-adotar:hover {
+  background-color: #ffa5c4;
 }
 
 .cards-animais {
@@ -442,7 +469,7 @@
   margin-left: 20px;
   width: 160px;
   height: 270px;
-  background-color: #03989e;
+  background-color: #65669b;
   background-size: cover;
 }
 

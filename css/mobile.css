@@ -47,22 +47,21 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .container-menu{
-    z-index:10;
-    background-color:rgba(255, 255, 255, 0.727);
- 
+  .container-menu {
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.727);
   }
   nav {
-    position:fixed;
-    top:74px ;
-    left:100%;
+    position: fixed;
+    top: 74px;
+    left: 100%;
     display: none;
     flex-direction: column;
     justify-content: flex-start;
     gap: 0px;
     height: 100%;
     width: 100%;
-    background-color:rgba(255, 255, 255, 0.727);
+    background-color: rgba(255, 255, 255, 0.727);
     text-align: center;
     padding-top: 50px;
   }
@@ -223,9 +222,18 @@
     width: 100%;
   }
 
+  /*******************quero-doar**********************/
+
+  .img-doar {
+    margin: auto;
+    background-image: url("../img/img-doacao-mobile.png");
+    width: 320px;
+    height: 320px;
+  }
+
   /**********************fundadora******************/
   .container-carrossel {
-    width: 100%;
+    width: 80%;
     height: 400px;
   }
 

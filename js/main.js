@@ -3,19 +3,17 @@ let containerAnimais = document.querySelector(".container-animais");
 let assuntos = [];
 let animais = [];
 
-let buttonCopy = document.querySelector(".button-copy");
+let buttonCopy = document.querySelectorAll(".button-copy");
 let inputPix = document.querySelector(".input-pix");
-let confirmCopy = document.querySelector(".confirm-copy");
+let audio = document.querySelector("audio");
 
 let containerCarrossel = document.querySelector(".container-carrossel");
 let btnDireita = document.querySelector(".btn-direita");
-let btnEsquerda = document.querySelector(".btn-esquerda")
-
-
+let btnEsquerda = document.querySelector(".btn-esquerda");
 
 async function iniciarResposta() {
   assuntos = await respSobre();
-  animais = await  respAnimais()
+  animais = await respAnimais();
 
   criarAssuntos();
   GaleriaAnimais();
@@ -58,16 +56,14 @@ function criarAssuntos() {
 
 function GaleriaAnimais() {
   animais.map((animal) => {
-    let imgAnimal=document.createElement("img")
+    let imgAnimal = document.createElement("img");
 
-    imgAnimal.src=animal.img
-    imgAnimal.classList.add("imgAnimal")
-    
-    containerAnimais.appendChild(imgAnimal)
+    imgAnimal.src = animal.img;
+    imgAnimal.classList.add("imgAnimal");
+
+    containerAnimais.appendChild(imgAnimal);
   });
 }
-
-
 
 function expandirAssunto(sectionAssunto, expandir, sectionTitulo) {
   sectionAssunto.style.height = "auto";
@@ -88,17 +84,32 @@ function removeAssunto(sectionAssunto, expandir, sectionTitulo) {
 }
 
 function copiarPix() {
-  buttonCopy.addEventListener("click", function (e) {
-    inputPix.select();
-    document.execCommand("copy");
-    confirmCopy.innerHTML = `<i class="bi bi-check-circle-fill"></i>Copiado`;
-    confirmCopy.style.background = "#a9dbd0";
+  let confirmPix = document.createElement("div");
+  let descConfirm = document.createElement("p");
 
-    setTimeout(() => {
-      confirmCopy.innerHTML = "Pix de doação";
-      confirmCopy.style.background = "";
-    }, 3000);
-  });
+  confirmPix.classList.add("confirmPix");
+  descConfirm.classList.add("descConfirm");
+
+  descConfirm.innerHTML = `<i class="bi bi-check2-circle"></i>Pix copiado`;
+  confirmPix.appendChild(descConfirm);
+
+  for (const copiar of buttonCopy) {
+    copiar.addEventListener("click", function (e) {
+      inputPix.select();
+      document.execCommand("copy");
+
+      window.document.body.appendChild(confirmPix);
+
+      setTimeout(() => {
+        confirmPix.style.left = "0px";
+        audio.play();
+      }, 100);
+
+      setTimeout(() => {
+        confirmPix.style.left = "-100%";
+      }, 2000);
+    });
+  }
 }
 
 copiarPix();
@@ -114,6 +125,3 @@ function carrosselFundadora() {
 }
 
 carrosselFundadora();
-
-
-

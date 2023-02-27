@@ -1,9 +1,4 @@
-
 let cardAdotar = document.querySelector(".card-adotar");
-
-
-
-
 
 function animarCard() {
   setInterval(() => {
