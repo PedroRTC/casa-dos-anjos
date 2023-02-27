@@ -43,16 +43,21 @@ header {
   z-index:1;
 }
 
+nav {
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s;
+  background-color:transparent;
+
+}
+
 nav a {
   color: black;
   font-weight: 500;
 }
 
-nav {
-  width: 650px;
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .logo-menu {
   width: 60px;
@@ -154,6 +159,12 @@ nav {
   align-items: center;
 
 }
+
+
+.btn-menu-mobile i{
+  transition: all 0.3s;
+}
+
 
 /*footer*/
 footer {
